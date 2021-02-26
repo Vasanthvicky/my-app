@@ -1,7 +1,12 @@
+.container-fluid {
+    overflow-x: hidden;
+    height: 100%;
+}
+
 .navbar-right-side-header-block {
     display: inline-block;
     position: relative;
-    top: -25px;
+    top: 0;
 }
 .navbar-right-side-menu-chart {
     display: block;
