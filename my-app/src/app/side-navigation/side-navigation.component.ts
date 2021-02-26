@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideNavigationComponent implements OnInit {
 
+  status: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  clickEvent() {
+    this.status = !this.status;
+}
 }
