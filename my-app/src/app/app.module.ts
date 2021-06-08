@@ -10,6 +10,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatIconModule,
     MatSidenavModule,
     MatFormFieldModule,
-    MatExpansionModule
+    MatExpansionModule,
+    CarouselModule
   ],
   exports: [
     MatSidenavModule,
