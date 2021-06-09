@@ -5,19 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SideNavigationComponent } from './side-navigation/side-navigation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DraggableCarouselComponent } from './draggable-carousel/draggable-carousel.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatExpansionModule} from '@angular/material/expansion';
-import { CarouselModule } from 'ngx-owl-carousel-o';
-
 
 @NgModule({
   declarations: [
     AppComponent,
     SideNavigationComponent,
-    DraggableCarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -26,8 +22,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     MatIconModule,
     MatSidenavModule,
     MatFormFieldModule,
-    MatExpansionModule,
-    CarouselModule
+    MatExpansionModule
   ],
   exports: [
     MatSidenavModule,
