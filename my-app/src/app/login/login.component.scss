@@ -15,9 +15,11 @@
     &-left-wrap {
         background-color: $color_brown_bg;
         width: 50%;
+        position: relative;
     }
     &-right-wrap {
         width: 50%;
+        position: relative;
     }
 }
 .mid-coffee-img-section {
@@ -31,4 +33,11 @@
             border-radius: 50%;
         }
     }
+}
+
+.set-wrap-center {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
