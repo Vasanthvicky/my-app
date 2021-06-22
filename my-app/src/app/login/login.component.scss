@@ -3,11 +3,12 @@
 
 .brand-logo {
     width: 120px;
-    padding: 30px;
+    margin: 30px;
 }
 .full-screen-section {
     height: 100vh;
     display: block;
+    overflow: hidden;
 }
 .login-section {
     display: flex;
