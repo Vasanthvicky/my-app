@@ -1,7 +1,8 @@
-.container-fluid {
-    overflow-x: hidden;
-    height: 100%;
-}
+@import '../../mixins.scss';
+@import '../../variables.scss';
+
+
+
 
 .navbar-right-side-header-block {
     display: inline-block;
@@ -226,6 +227,62 @@
         padding: 0 !important;
         &:hover {
             padding: 0 !important;
+        }
+    }
+}
+
+.brand-logo {
+    width: 120px;
+    margin: 20px 30px;
+}
+
+.brand-details {
+    display: inline-flex;
+}
+
+.menu-items {
+    display: inline-flex;
+    li {
+        padding: 20px;
+        display: inline-flex;
+        a {
+            text-decoration: inherit;
+        }
+    }
+}
+
+//Top Navbar SCSS
+.navbar-header-section {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    vertical-align: middle;
+    box-shadow: 0 0 3px #a0a0a0;
+}
+
+.navbar-left-side-section {
+    width: 80%;
+    display: block;
+    float: left;
+    .menu-items {
+        display: inline-flex;
+        margin: 0;
+        li {
+            padding: 20px 60px;
+            text-align: center;
+        }
+    }
+}
+.navbar-right-side-section {
+    width: 20%;
+    display: block;
+    float: right;
+    text-align: right;
+    .menu-items {
+        display: block;
+        margin: 0;
+        li {
+            padding: 20px;
         }
     }
 }

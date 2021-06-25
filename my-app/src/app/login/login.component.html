@@ -1,0 +1,71 @@
+<div class="full-screen-section">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="login-section">
+                <div class="login-section-left-wrap">
+                    <div class="brand-details">
+                        <div class="brand-logo">
+                            <img src="../../assets/brand-logo/trustrace_logo_black.svg" alt="">                            
+                        </div>                       
+                    </div>
+                    <div class="set-wrap-center">
+                        <div class="brand-title">
+                            <h3 class="title">Trend</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-section-right-wrap">
+                    <div class="set-wrap-center">
+                        <div class="login-titile-block">
+                            <h3 class="title">Sign in to TrusTrace</h3>
+                        </div>
+                        <div class="login-details-block">
+                            <div class="mat-form-group">
+                                <mat-form-field appearance="outline">
+                                  <mat-label>Email</mat-label>
+                                  <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+                                      placeholder="Ex. pat@example.com">
+                                      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                  <mat-hint>Errors appear instantly!</mat-hint>
+                                  <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                                  Please enter a valid email address
+                                  </mat-error>
+                                  <mat-error *ngIf="emailFormControl.hasError('required')">
+                                  Email is <strong>required</strong>
+                                  </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="mat-form-group">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Password</mat-label>
+                                    <input type="password" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+                                        placeholder="Ex. pat@example.com">
+                                        <mat-icon matSuffix>visibility</mat-icon>
+                                    <mat-hint>Errors appear instantly!</mat-hint>
+                                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                                    Please enter a valid email address
+                                    </mat-error>
+                                    <mat-error *ngIf="emailFormControl.hasError('required')">
+                                    Email is <strong>required</strong>
+                                    </mat-error>
+                                  </mat-form-field>
+                            </div>
+                            <div class="forgot-password-block">
+                                <a href="" class="forgot-password">Forgot Password</a>
+                            </div>
+                        </div> 
+                        <div class="login-button-block">
+                            <button class="btn btn-primary">Login</button>
+                        </div>                   
+                    </div>
+                </div>
+                <div class="mid-coffee-img-section">
+                    <div class="img-block">
+                        <!-- <img src="../../assets/coffee-bg/coffee-logo_1025-306.jpg" alt=""> -->
+                        <img src="../../assets/coffee/gif/coffee-cup-animated.gif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
