@@ -10,11 +10,10 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatExpansionModule} from '@angular/material/expansion';
 
-
 @NgModule({
   declarations: [
     AppComponent,
-    SideNavigationComponent
+    SideNavigationComponent,
   ],
   imports: [
     BrowserModule,
